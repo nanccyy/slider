@@ -1,0 +1,84 @@
+.top {
+  display: flex;
+  justify-content: space-between;
+
+  &__logo {
+    background-image: url("../../assets/logo.svg");
+    width: 71px;
+    height: 123px;
+  }
+
+  &__left-corner {z-index: 20;
+    display: flex;
+    align-items: baseline;
+  }
+
+  &__button {
+    font-family: Montserrat;
+    width: 141px;
+    height: 40px;
+    background-color: inherit;
+    border: none;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    position: relative;
+    outline: none;
+    appearance: none;
+    text-transform: uppercase;
+
+    &::after {
+      content: "";
+      display: block;
+      height: 23px;
+      width: 2px;
+      background-color: #fff;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      height: 2px;
+      width: 122px;
+      background-color: #fff;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+
+    & > span {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #fe5803;
+      display: block;
+      position: absolute;
+      right: -1px;
+      bottom: -2px;
+    }
+
+    & > a {
+      color: #fff;
+    }
+  }
+}
+.nav {
+  &__list {
+    display: flex;
+
+    & > :last-child {
+      margin-right: 36px;
+    }
+  }
+
+  &__item {
+  }
+
+  &__link {
+    color: #fff;
+    padding: 0 10px;
+    margin: 0 10px;
+  }
+}
